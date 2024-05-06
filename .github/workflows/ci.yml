@@ -54,7 +54,7 @@ on:
       verify-goal:
         description: The Maven goal used by verify jobs
         required: false
-        default: 'install'
+        default: 'verify'
         type: string
 
       verify-fail-fast:
