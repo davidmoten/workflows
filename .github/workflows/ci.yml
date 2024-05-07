@@ -73,6 +73,12 @@ on:
         default: true
         type: boolean
 
+      dependabot:
+        description: merges dependabot PRs if they pass maven verify
+        required: false
+        default: true
+        type: boolean
+
 jobs:
 
   build:
