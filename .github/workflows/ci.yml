@@ -116,7 +116,7 @@ jobs:
           name: codecov
 
   dependabot:
-    if: ${{ inputs.dependabot && github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' }}
+    if: ${{ inputs.dependabot == 'true' && github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     needs: build
     permissions:
